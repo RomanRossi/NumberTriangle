@@ -90,7 +90,7 @@ public class NumberTriangle {
     public int retrieve(String path) {
         NumberTriangle currentTriangle = this;
         for  (int i = 0; i < path.length(); i++) {
-            direction = path.charAt(i);
+            char direction = path.charAt(i);
             if (direction == 'l') {
                 currentTriangle = currentTriangle.left;
             }
